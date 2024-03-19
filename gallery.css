@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    background: rgb(13, 17, 23);
+}
+
+header h3 {
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Khula", sans-serif;
+}
+
+.vontainer {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.gallery div {
+    min-height: 300px;
+    background: #565656;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: auto auto auto;
+grid-gap: 20px;
+}
+
+.gallery img {
+width: 100%;
+height: auto;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease;
+}
+.gallery img:hover {
+transform: scale(1.05);
+}

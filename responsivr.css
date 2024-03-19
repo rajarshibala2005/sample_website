@@ -1,0 +1,36 @@
+@media screen and (max-width: 710px) {
+    .background_img {
+        padding: 10px 8%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .intro_page h2 {
+        font-size: 50px;
+    }
+
+    .studio_name h1 {
+        font-size: 70px;
+    }
+
+    .intro_page .studio_name p {
+        font-size: 70px;
+    }
+
+    .intro_page {
+        max-width: 100%;
+    }
+
+    .intro_page p {
+        font-size: 23px;
+        font-weight: 100;
+    }
+
+    .intro_page_btn {
+        margin-top: 40px;
+        font-size: 22px;
+    }
+
+}
