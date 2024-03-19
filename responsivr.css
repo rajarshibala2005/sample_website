@@ -34,3 +34,39 @@
     }
 
 }
+
+@media screen and (max-width: 450px) {
+    nav ul {
+        display: none;
+    }
+    
+    .background_img {
+        padding: 8px 6%;
+    }
+
+    .intro_page h2 {
+        font-size: 30px;
+    }
+
+    .studio_name h1 {
+        font-size: 40px;
+    }
+
+    .intro_page .studio_name p {
+        font-size: 40px;
+    }
+
+    .intro_page {
+        max-width: 100%;
+    }
+
+    .intro_page p {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .intro_page_btn {
+        margin-top: 40px;
+        font-size: 22px;
+    }
+}
