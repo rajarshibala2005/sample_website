@@ -39,7 +39,7 @@
     nav ul {
         display: none;
     }
-    
+
     .background_img {
         padding: 8px 6%;
     }
@@ -58,6 +58,7 @@
 
     .intro_page {
         max-width: 100%;
+        margin-top: 170px;
     }
 
     .intro_page p {
