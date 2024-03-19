@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.background_img {
+    width: 1000;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(11, 11, 54, 0.65)), url("images/background_img.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 45px;
+    border-radius: 10px;
+    border: #fff 2px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    margin: 20px;
+    font-size: 25px;
+    transition: font-size 0.5s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background: #fff;
+    margin: auto;
+    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+nav ul li:hover {
+    font-size: 30px;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.nav_btn {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.nav_btn:hover {
+    background: rgba(255, 255, 255, 0.10);
+    font-size: 18px;
+}
+
+.mode_img {
+    height: 25px;
+    border-radius: 0;
+    margin-right: 15px;
+    transition: background 0.1s ease;
+}
+
+.intro_page {
+    max-width: 60%;
+    margin-top: 220px;
+}
+
+.intro_page h2 {
+    color: #fff;
+    font-size: 60px;
+    font-family: "Khula", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.studio_name {
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    color: #fff;
+}
+
+.studio_name h1 {
+    font-size: 80px;
+    font-family: "Khula", sans-serif;
+    font-weight: 400;
+}
+
+.intro_page .studio_name p {
+    font-family: "Khula", sans-serif;
+    font-weight: 400;
+    margin-left: 10px;
+    color: #007bff;
+    font-size: 80px;
+}
+
+.intro_page p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Khula", sans-serif;
+}
+
+.intro_page_btn {
+    margin-top: 40px;
+    font-size: 30px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.intro_page_btn:hover {
+    background-color: #0056b3;
+    /* Change color as needed */
+}
