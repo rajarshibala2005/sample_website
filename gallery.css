@@ -45,3 +45,8 @@ transform: scale(1.05);
         font-style: 60px;
     }
 }
+@media screen and (max-width: 120px) {
+    header h3 {
+        font-style: 60px;
+    }
+}
