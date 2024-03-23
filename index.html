@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap"
         rel="stylesheet">
     <title>Rathi-Raj STUDIO</title>
+    <link rel="shortcut icon" href="images/navlogo2.jpg" type="image/jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsivr.css">
 </head>
@@ -17,7 +18,8 @@
 <body>
     <header>
         <div class="background_img">
-            <nav>
+            <nav id="nav">
+                <span class="close" id="close-menu">&times;</span>
                 <img src="images/navlogo2.jpg" alt="logo">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -28,21 +30,59 @@
                 </ul>
                 <button class="nav_btn"><img class="mode_img" src="images/moon_png_2.png" alt="logo"></button>
             </nav>
+            <dic class="responsivenav">
+                    <div class="hamburger-menu" id="open-menu" onclick="showmenu()">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+            </dic>
             <div class="intro_page">
                 <h2>Welcome to</h2>
                 <div class="studio_name">
                     <h1>Rathi-Raj</h1>
                     <p>STUDIO</p>
                 </div>
-                <p>A photo studio is a sanctuary for the soul, a place where the cacophony of the world fades away, and
-                    the only sound that matters is the click of the shutter, capturing moments that will be cherished
-                    for generations to come.</p>
-                <p>In the hallowed halls of a photo studio, moments become memories, dreams take shape, and reality is transformed into art, each image a testament to the boundless creativity and vision of the human spirit.</p>
+                <p>In the hallowed halls of a photo studio, moments become memories, dreams take shape, and reality is
+                    transformed into art, each image a testament to the boundless creativity and vision of the human
+                    spirit. A photo studio is a sanctuary for the soul, a place where the cacophony of the world fades
+                    away, and the only sound that matters is the click of the shutter, capturing moments that will be
+                    cherished for generations to come.</p>
                 <a href="gallery.html"><button class="intro_page_btn">Go to Gallery</button></a>
             </div>
         </div>
     </header>
-
+    <main>
+        <section class="printings">
+            <div class="print_text">
+                <h4>Printings</h4>
+                <p>Post Cards</p>
+                <p>Thank you Cards</p>
+                <p>Visiting Cards</p>
+                <p>Stamp and Passport size photo</p>
+                <p>Custom size photo</p>
+                <button>Rate Chart</button>
+            </div>
+            <div class="print_img">
+                <img src="images/photopeintsmpl.png" alt="">
+            </div>
+        </section>
+        <section class="editings">
+            <div class="edit_text">
+                <h4>Editings</h4>
+                <p>Adobe Premiere Pro's seamless integration with other Adobe Creative Cloud applications enhances productivity by enabling smooth transitions between editing, motion graphics, and sound design.</p>
+                <button>Show more</button>
+            </div>
+            <div class="edit_vdo">
+                <video src="SAMPLEAB.m4v" muted autoplay></video>
+            </div>
+        </section>
+        <section class="album_sample">
+            <img src="images/bhy.jpg" alt="image">
+            <p>9*24inch Travel album design</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
