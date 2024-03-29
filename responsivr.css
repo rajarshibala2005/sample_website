@@ -1,267 +1,83 @@
 @media screen and (max-width: 710px) {
     .background_img {
-        min-height: 80vh;
+        padding: 0 6%;
+        margin-bottom: 60px;
     }
 
     nav {
-        display: none;
-        flex-direction: column;
-        background: rgb(6, 28, 61);
-        align-items: flex-start;
+        width: 80vw;
+        padding: 20px;
+        margin: auto;
+    }
+
+    nav img {
+        height: 30px;
     }
 
     nav ul {
-        min-width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        min-width: 100%;
-        display: block;
-        padding: 15px 0;
-        margin: 5px 0;
-        background: rgb(5, 21, 48);
-
-    }
-
-    nav ul li:hover::after {
-        width: 0;
-    }
-
-    nav img {
-        height: 35px;
-        margin-bottom: 25px;
-    }
-
-    .mode_img {
-        margin-top: 27px;
-        height: 20px;
-    }
-
-    .close {
-        font-size: 40px;
-        display: block;
-        color: #fff;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-      }
-
-    .responsivenav {
-        display: block;
-        padding: 0 8%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 999999999;
-    }
-
-    .responsivelogo {
-        height: 35px;
+        display: none;
     }
 
     .hamburger-menu {
-        cursor: pointer;
-        margin: 5px;
-        position: relative;
-    }
-    
-    .hamburger-menu div {
-        background: white;
-        width: 25px;
-        height: 3px;
-        margin: 5px;
-    }    
-
-    .intro_page h2 {
-        font-size: 45px;
-    }
-
-    .studio_name h1 {
-        font-size: 60px;
-    }
-
-    .intro_page .studio_name p {
-        font-size: 60px;
+        display: block;
     }
 
     .intro_page {
-        max-width: 100%;
-        margin-top: 90px;
-    }
-
-    .intro_page p {
-        font-size: 18px;
-        line-height: 30px;
-        font-weight: 50;
-        color: rgba(255, 255, 255, 0.75);
-    }
-
-    .intro_page_btn {
-        margin-top: 20px;
-        font-size: 18px;
-        padding: 10px 20px;
-    }
-
-    .printings {
         max-width: 80%;
-        flex-direction: column-reverse;
+        padding-top: 220px;
     }
 
-    .print_text h4 {
-        margin-bottom: 25px;
-        font-size: 40px;
-    }
-    
-    .print_text p {
-        font-size: 20px;
-        margin: 8px 0;
-    }
-
-    .editings {
-        max-width: 100%;
-        flex-direction: column-reverse;
-    }
-
-    .edit_text {
-        padding: 30px 15%;
-    }
-
-    .edit_text h4 {
-        margin-bottom: 25px;
-        font-size: 40px;
-    }
-
-    .edit_text p {
-        font-size: 20px;
-        margin: 8px 0;
-    }
-
-    .album_sample img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .background_img {
-        min-height: 80vh;
-    }
-
-    nav img {
-        height: 35px;
-    }
-
-    .mode_img {
-        height: 15px;
-    }
-
-    .intro_page h2 {
-        font-size: 45px;
-    }
-
-    .studio_name h1 {
-        font-size: 50px;
-    }
-
-    .intro_page .studio_name p {
-        font-size: 50px;
-    }
-
-    .intro_page {
-        max-width: 100%;
-        margin-top: 90px;
+    .intro_page h1 {
+        font-size: 70px;
+        margin: 5px 0;
     }
 
     .intro_page p {
-        font-size: 18px;
-        line-height: 30px;
-        font-weight: 50;
-        color: rgba(255, 255, 255, 0.65);
+        font-size: 15px;
+        line-height: 20px;
     }
 
-    .intro_page_btn {
-        margin-top: 20px;
-        font-size: 18px;
-        padding: 10px 20px;
+    .intro_btn {
+        width: 100%;
+        font-size: 16px;
+        margin-top: 30px;
     }
 
     .printings {
         max-width: 90%;
+        margin: 0;
+        flex-direction: column-reverse;
+        margin-bottom: 80px;
     }
 
-    .print_text h4 {
-        margin-bottom: 23px;
-        font-size: 35px;
-    }
-    
-    .print_text p {
-        font-size: 18px;
-        margin: 8px 0;
+
+    .print_text {
+        padding: 30px 20px;
     }
 
     .editings {
-        max-width: 100%;
         flex-direction: column-reverse;
+        max-width: 90%;
+        margin: 0;
+        margin-bottom: 80px;
     }
 
     .edit_text {
-        padding: 30px 12%;
+        padding: 30px 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .album_sample img {
+        width: 90vw;
+        height: auto;
+        margin-top: 40px;
     }
 
     .album_sample p {
         font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 490px) {
-
-
-    nav img {
-        height: 35px;
-    }
-
-    .mode_img {
-        height: 15px;
-    }
-
-    .background_img {
-        padding: 8px 6%;
-        min-height: 80vh;
-    }
-
-    .intro_page h2 {
-        font-size: 30px;
-    }
-
-    .studio_name h1 {
-        font-size: 40px;
-    }
-
-    .intro_page .studio_name p {
-        font-size: 40px;
-    }
-
-    .intro_page {
-        max-width: 100%;
-        margin-top: 180px;
-    }
-
-    .intro_page p {
-        font-size: 10px;
-        font-weight: 100;
-    }
-
-    .intro_page_btn {
-        margin-top: 25px;
-        font-size: 18px;
-        padding: 10px 20px;
-    }
-
-    .album_sample img {
-        margin-top: 40px;
-        
+        margin: 10px 0;
     }
 }

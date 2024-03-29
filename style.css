@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Fira Sans', sans-serif;
 }
 
 body {
@@ -10,153 +10,115 @@ body {
 }
 
 .background_img {
-    width: 1000;
+    max-width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(11, 11, 54, 0.65)), url("images/background_img.jpg");
-    background-size: cover;
+    padding: 0 8%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(37, 3, 149, 0.40)), url(images/background_img.jpg);
     background-position: center;
-    background-attachment: fixed;
-    margin-bottom: 150px;
+    background-size: cover;
+    margin-bottom: 100px;
 }
 
 nav {
+    width: 100rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 8%;
-}
-
-.close {
-    display: none;
+    position: fixed;
+    top: 10px;
+    z-index: 9999;
+    background: rgba(7, 29, 61, 0.80);
+    border-radius: 25px;
 }
 
 nav img {
-    height: 45px;
-    border-radius: 10px;
-    border: #fff 2px;
-    margin-right: 20px;
-}
-
-.responsivenav {
-    display: none;
+    height: 40px;
 }
 
 nav ul {
     display: flex;
     align-items: center;
+    padding: 20px 8px;
 }
 
 nav ul li {
-    display: inline;
     list-style: none;
-    margin: 20px;
-    font-size: 25px;
-    transition: font-size 0.5s ease;
+    margin: 0 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgba(250, 250, 250, 0.75);
+    color: #fff;
+    font-size: 20px;
 }
 
-nav ul li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    display: block;
-    background: #fff;
-    margin: auto;
-    transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-nav ul li:hover {
-    font-size: 30px;
-}
-
-nav ul li:hover::after {
-    width: 100%;
-}
-
-.nav_btn {
-    background: transparent;
-    border: 0;
-    outline: 0;
+.hamburger-menu {
+    display: none;
     cursor: pointer;
-    padding: 5px 10px;
+    margin: 5px;
+    position: relative;
 }
 
-.nav_btn:hover {
-    background: rgba(255, 255, 255, 0.10);
-    font-size: 18px;
-}
-
-.mode_img {
-    height: 25px;
-    border-radius: 0;
+.hamburger-menu div {
+    background: white;
+    width: 15px;
+    height: 2px;
+    margin: 3px;
 }
 
 .intro_page {
     max-width: 60%;
-    margin-top: 200px;
-    padding: 10px 8%;
+    padding-top: 300px;
 }
 
-.intro_page h2 {
+.intro_page h1 {
+    text-decoration: none;
+    font-size: 70px;
     color: #fff;
-    font-size: 60px;
-    font-family: "Khula", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.studio_name {
-    display: flex;
-    align-items: center;
-    font-size: 60px;
-    color: #fff;
-}
-
-.studio_name h1 {
-    font-size: 80px;
-    font-family: "Khula", sans-serif;
-    font-weight: 400;
-}
-
-.intro_page .studio_name p {
-    font-family: "Khula", sans-serif;
-    font-weight: 400;
-    margin-left: 10px;
-    color: #007bff;
-    font-size: 80px;
+    margin: 10px 0;
 }
 
 .intro_page p {
-    color: rgba(250, 250, 250, 0.75);
     font-size: 20px;
-    font-weight: 100;
-    font-family: "Khula", sans-serif;
-    line-height: 40px;
-
+    line-height: 30px;
+    color: #fff;
 }
 
-.intro_page_btn {
-    margin-top: 40px;
-    font-size: 30px;
-    padding: 12px 24px;
+.intro_btn {
+    display: inline-block;
+    padding: 12px 48px;
     background-color: #007bff;
     color: #fff;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 6px;
     border: none;
+    border-radius: 10px;
+    font-size: 26px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+  }
 
-.intro_page_btn:hover {
-    background-color: #0056b3;
-    /* Change color as needed */
-}
+  /* Styles for the click effect */
+  .intro_btn::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 300%;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    pointer-events: none;
+    transform: translate(-75%, -75%) rotate(45deg);
+  }
+
+  /* Effect on click */
+  .intro_btn:hover::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 150%;
+    height: 150%;
+  }
+
 
 .printings {
     max-width: 60%;
@@ -171,37 +133,24 @@ nav ul li:hover::after {
     padding: 30px 0;
 }
 
-.print_text button {
-    margin-top: 60px;
-    font-size: 20px;
-    background-color: #2c28ff;
-    padding: 10px 20px;
-    color: rgba(250, 250, 250, 0.80);
-    border: 0;
-    outline: 0;
-    border-radius: 5px;
-}
-
-.print_text button:hover {
-    background-color: #232186;
-}
-
 .print_text h4 {
-    color: rgba(250, 250, 250, 0.80);
+    color: rgb(250, 250, 250);
     margin-bottom: 30px;
     font-size: 40px;
     font-weight: 200;
 }
 
 .print_text p {
-    color: rgba(250, 250, 250, 0.60);
+    color: rgb(205, 205, 205);
     font-size: 20px;
     font-weight: 100;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 .print_img {
     flex-basis: 45%;
+    display: flex;
+    align-items: center;
 }
 
 .print_img img {
@@ -224,17 +173,18 @@ nav ul li:hover::after {
 }
 
 .edit_text h4 {
-    color: rgba(250, 250, 250, 0.80);
+    color: rgb(250, 250, 250);
     margin-bottom: 30px;
     font-size: 40px;
     font-weight: 200;
 }
 
 .edit_text p {
-    color: rgba(250, 250, 250, 0.60);
+    color: rgb(205, 205, 205);
     font-size: 20px;
     font-weight: 100;
     margin: 10px 0;
+    line-height: 30px;
 }
 
 .edit_vdo {
@@ -247,20 +197,23 @@ nav ul li:hover::after {
     width: 100%;
 }
 
-.edit_text button {
-    margin-top: 60px;
+.btn {
+    display: inline-block;
+    padding: 10px 36px;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    border-radius: 50px;
     font-size: 20px;
-    background-color: #2c28ff;
-    padding: 10px 20px;
-    color: rgba(250, 250, 250, 0.80);
-    border: 0;
-    outline: 0;
-    border-radius: 5px;
-}
-
-.edit_text button:hover {
-    background-color: #232186;
-}
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+  /* Effect on click */
+  .btn:hover {
+    background: #cdcdcd;
+  }
 
 .album_sample {
     background: #5453A6;
