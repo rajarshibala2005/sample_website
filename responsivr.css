@@ -1,5 +1,6 @@
 @media screen and (max-width: 710px) {
     .background_img {
+        min-height: 90vh;
         padding: 0 6%;
         margin-bottom: 60px;
     }
@@ -24,7 +25,7 @@
 
     .intro_page {
         max-width: 80%;
-        padding-top: 220px;
+        padding-top: 200px;
     }
 
     .intro_page h1 {
@@ -33,7 +34,7 @@
     }
 
     .intro_page p {
-        font-size: 15px;
+        font-size: 20px;
         line-height: 20px;
     }
 
@@ -44,7 +45,7 @@
     }
 
     .printings {
-        max-width: 90%;
+        max-width: 95%;
         margin: 0;
         flex-direction: column-reverse;
         margin-bottom: 80px;
@@ -57,7 +58,7 @@
 
     .editings {
         flex-direction: column-reverse;
-        max-width: 90%;
+        max-width: 95%;
         margin: 0;
         margin-bottom: 80px;
     }
@@ -80,4 +81,33 @@
         font-size: 20px;
         margin: 10px 0;
     }
+}
+
+@media screen and (max-width: 450px) {
+    .background_img {
+        padding: 0 4%;
+        margin-bottom: 50px;
+    }
+
+    nav img {
+        height: 25px;
+    }
+
+    .intro_page {
+        max-width: 100%;
+        padding-top: 200px;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .intro_page h1 {
+        font-size: 60px;
+        margin: 2px 0;
+    }
+
+    .intro_page p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
 }
