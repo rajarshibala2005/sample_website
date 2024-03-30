@@ -42,11 +42,6 @@ transform: scale(1.05);
 
 @media screen and (max-width: 710px) {
     header h3 {
-        font-style: 60px;
-    }
-}
-@media screen and (max-width: 120px) {
-    header h3 {
-        font-style: 60px;
+        font-size: 50px;
     }
 }

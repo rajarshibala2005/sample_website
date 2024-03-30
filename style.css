@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Fira Sans', sans-serif;
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
 }
 
 body {
@@ -86,20 +87,20 @@ nav ul li a {
 
 .intro_btn {
     display: inline-block;
-    padding: 12px 48px;
+    padding: 18px 60px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 40px;
     font-size: 26px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     margin-top: 30px;
-  }
+}
 
-  /* Styles for the click effect */
-  .intro_btn::before {
+/* Styles for the click effect */
+.intro_btn::before {
     content: "";
     position: absolute;
     background: rgba(255, 255, 255, 0.2);
@@ -110,14 +111,14 @@ nav ul li a {
     transition: all 0.5s ease;
     pointer-events: none;
     transform: translate(-75%, -75%) rotate(45deg);
-  }
+}
 
-  /* Effect on click */
-  .intro_btn:hover::before {
+/* Effect on click */
+.intro_btn:hover::before {
     transform: translate(-50%, -50%) rotate(45deg);
     width: 150%;
     height: 150%;
-  }
+}
 
 
 .printings {
@@ -209,11 +210,12 @@ nav ul li a {
     position: relative;
     overflow: hidden;
     margin-top: 40px;
-  }
-  /* Effect on click */
-  .btn:hover {
+}
+
+/* Effect on click */
+.btn:hover {
     background: #cdcdcd;
-  }
+}
 
 .album_sample {
     background: #5453A6;
@@ -227,7 +229,7 @@ nav ul li a {
     height: 500px;
     width: auto;
     margin-top: 70px;
-    
+
 }
 
 .album_sample p {
