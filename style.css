@@ -7,14 +7,13 @@
 
 body {
     background: rgb(13, 17, 23);
-    height: 8000px;
 }
 
 .background_img {
     max-width: 100%;
     min-height: 100vh;
     padding: 0 8%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(37, 3, 149, 0.40)), url(images/background_img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(23, 1, 94, 0.7)), url(images/background_img.jpg);
     background-position: center;
     background-size: cover;
     margin-bottom: 100px;
@@ -223,6 +222,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .album_sample img {
@@ -237,3 +237,93 @@ nav ul li a {
     color: rgba(250, 250, 250, 0.80);
     margin: 20px 0;
 }
+
+.packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.packages h4 {
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    font-style: oblique;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.packages p {
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.packages img {
+    width: 50vw;
+}
+
+footer {
+    background: rgb(1, 28, 70.65);
+}
+
+footer img {
+    height: 50px;
+    margin: 20px 8%;
+}
+
+footer hr {
+    color: #fff;
+}
+
+footer p {
+    font-size: 18px;
+    color: #fff;
+    margin: 30px 8%;
+}
+
+.footer-row {
+    margin: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 100px;
+}
+
+.footer-col {
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col h4 {
+    color: #cdcdcd;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.footer-col p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+.footer-col div {
+    display: flex;
+    align-items: center;
+}
+
+.footer-col div img {
+    height: 15px;
+    margin-right: 10px;
+}
+
