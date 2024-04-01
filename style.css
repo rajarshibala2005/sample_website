@@ -13,7 +13,7 @@ body {
     max-width: 100%;
     min-height: 100vh;
     padding: 0 8%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(23, 1, 94, 0.7)), url(images/background_img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(23, 1, 94, 0.65)), url(images/background_img.jpg);
     background-position: center;
     background-size: cover;
     margin-bottom: 100px;
@@ -268,6 +268,113 @@ nav ul li a {
     width: 50vw;
 }
 
+.contact {
+    margin: 0 8%;
+    margin-bottom: 100px;
+}
+
+.contact h4 {
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    font-style: oblique;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact iframe {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.contact-row {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border: #fff solid 1px;
+}
+
+.contact-col {
+    flex-basis: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-col-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.contact-col-item img {
+    color: #007bff;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.contact-col-item span p {
+    font-size: 20px;
+    padding: 2px 0;
+    color: #fff;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.border-r {
+    border-right: #fff solid 1px;
+    
+}
+
+/* Style for form inputs */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    background: black;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    color: var(--secondary-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Style for the submit button */
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 25px;
+    display: block;
+    margin: 30px 0;
+}
+
+/* Style for the submit button on hover */
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
 footer {
     background: rgb(1, 28, 70.65);
 }
@@ -326,4 +433,3 @@ footer p {
     height: 15px;
     margin-right: 10px;
 }
-
