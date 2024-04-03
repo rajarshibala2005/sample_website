@@ -11,23 +11,31 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="images/navlogo2.jpg" type="image/jpg">
     <title>RR STUDIO Gallery</title>
-    <link rel="stylesheet" href="gallery.css">
-    <link rel="stylesheet" href="galleryresponsive.css">
+    <link rel="stylesheet" href="gallery_album_d.css">
+    <link rel="stylesheet" href="gallery_album_d_responsive.css">
 </head>
 
 <body>
     <header>
         <h3>Gallery</h3>
-        <img src="images/RRSD.png" alt="logo">
+        <div class="navbar" id="myNavbar">
+            <a href="gallery.html">Home</a>
+            <a href="wedding.html">Wedding</a>
+            <a href="pre-wedding.html">Pre-Wedding</a>
+            <a href="rice-ceremony.html">Rice Ceremony</a>
+            <a href="album-desing.html" class="active">Album Design</a>
+        </div>
+        <hr>
     </header>
     <main>
         <div class="container">
             <div class="gallery">
-                <div><a href="wedding.html"><p>Wedding</p></a></div>
-                <div><a href="pre-wedding.html"><p>Pre-Wedding</p></a></div>
-                <div><a href="rice-ceremony.html"><p>Rice Ceremony</p></a></div>
-                <div><a href="album-desing.html"><p>Album Design</p></a></div>
+
             </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="close" onclick="closeModal()"></div>
+            <img class="modal-content" id="modal-image">
         </div>
     </main>
     <footer>
@@ -70,6 +78,40 @@
         <hr>
         <p>&copy 2023 Rathi-Raj STUDIO all rights reserved.</p>
     </footer>
+    <script>
+        const modal = document.getElementById('modal');
+
+        function openModal(imageUrl) {
+            const modalImg = document.getElementById('modal-image');
+            modal.style.display = 'block';
+            modalImg.src = imageUrl;
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        // Example usage:
+        const gallery = document.querySelector('.gallery');
+
+        // Replace these URLs with actual image URLs from your photo gallery
+        const imageUrls = [
+            'images/bhy.jpg',
+            'images/bhy.jpg',
+            'images/bhy.jpg',
+            'images/bhy.jpg',
+            'images/bhy.jpg',
+            'images/bhy.jpg',
+            // Add more image URLs as needed
+        ];
+
+        imageUrls.forEach(url => {
+            const img = document.createElement('img');
+            img.src = url;
+            img.onclick = () => openModal(url);
+            gallery.appendChild(img);
+        });
+    </script>
 </body>
 
 </html>

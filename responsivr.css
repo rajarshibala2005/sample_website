@@ -215,7 +215,7 @@
     }
 
     .print_text h4 {
-        margin-bottom: 25px;
+        margin-bottom: 28px;
         font-size: 35px;
     }
 
@@ -225,7 +225,7 @@
     }
 
     .edit_text h4 {
-        margin-bottom: 25px;
+        margin-bottom: 28px;
         font-size: 35px;
     }
 
@@ -341,7 +341,7 @@
     }
 
     .packages h4 {
-        font-size: 32px;
+        font-size: 35px;
         margin-bottom: 20px;
     }
 
@@ -356,7 +356,7 @@
     }
 
     .contact h4 {
-        font-size: 32px;
+        font-size: 35px;
         margin-bottom: 25px;
     }
 
@@ -485,7 +485,7 @@
     }
 
     .packages h4 {
-        font-size: 30px;
+        font-size: 32px;
         margin-bottom: 18px;
     }
 
@@ -505,7 +505,7 @@
     }
 
     .contact h4 {
-        font-size: 30px;
+        font-size: 32px;
         margin-bottom: 24px;
     }
 
@@ -539,16 +539,15 @@
 
     footer img {
         height: 30px;
-        margin: 15px 4%;
+        margin: 15px 2%;
     }
 
     footer p {
         font-size: 15px;
-        margin: 20px 4%;
+        margin: 20px 2%;
     }
 
     .footer-row {
-        margin: 20px 4%;
+        margin: 20px 2%;
     }
-
 }
