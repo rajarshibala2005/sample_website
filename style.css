@@ -86,8 +86,8 @@ nav ul li a {
 
 .intro_btn {
     display: inline-block;
-    padding: 18px 60px;
-    background-color: #007bff;
+    padding: 15px 28px;
+    background-color: #0055ff;
     color: #fff;
     border: none;
     border-radius: 40px;
@@ -181,7 +181,7 @@ nav ul li a {
 
 .edit_text p {
     color: rgb(205, 205, 205);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 100;
     margin: 10px 0;
     line-height: 30px;
@@ -363,7 +363,7 @@ nav ul li a {
     color: #fff;
     border: none;
     padding: 10px 16px;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 25px;
     display: block;
