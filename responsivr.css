@@ -33,11 +33,6 @@
         margin: 5px 0;
     }
 
-    .intro_page p {
-        font-size: 15px;
-        line-height: 30px;
-    }
-
     .intro_btn {
         width: 100%;
         font-size: 16px;
@@ -309,9 +304,6 @@
 
     .intro_page {
         max-width: 100%;
-    }
-    .intro_page p {
-        font-size: 15px;
     }
 
     .intro_page h1 {
