@@ -1,26 +1,22 @@
-document.getElementById('open-menu').addEventListener('click', function() {
-    document.getElementById('nav').style.display = 'block';
-});
-document.getElementById('open-menu').addEventListener('click', function() {
-    document.getElementById('open-menu').style.display = 'none';
-});
+const nav = document.getElementById("nav");
+const openMenu = document.getElementById("open-menu");
+const closeMenu = document.getElementById("close");
 
-document.getElementById('close-menu').addEventListener('click', function() {
-    document.getElementById('nav').style.display = 'none';
-});
-document.getElementById('close-menu').addEventListener('click', function() {
-    document.getElementById('open-menu').style.display = 'block';
-});
+let menu = "close";
 
-window.addEventListener('scroll', function () {
-    var navbar = document.getElementById('nav');
-    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    var heightThreshold = 100; // Change this value to your desired height
-
-    if (scrolled > heightThreshold) {
-        navbar.classList.add('scrolled');
+const toggleNav = () => {
+    if (menu === "close") {
+        menu = "open";
+        nav.style.display = "block";
+        closeMenu.style.display = "block";
+        openMenu.style.display = "none";
     } else {
-        navbar.classList.remove('scrolled');
-    }
-});
+        menu = "close";
+        nav.style.display = "none";
+        closeMenu.style.display = "none";
+        openMenu.style.display = "block";
+    } 
+  }
 
+openMenu.addEventListener("click", toggleNav)
+closeMenu.addEventListener("click", toggleNav)
