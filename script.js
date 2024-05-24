@@ -1,6 +1,6 @@
 const nav = document.getElementById("nav");
 const openMenu = document.getElementById("open-menu");
-const closeMenu = document.getElementById("close");
+const closeMenu = document.getElementById("cross");
 
 let menu = "close";
 

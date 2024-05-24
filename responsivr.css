@@ -2,7 +2,18 @@
     .background_img {
         min-height: 90vh;
         padding: 0 6%;
-        margin-bottom: 60px;
+    }
+
+    .cross {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .i {
+        display: block;
+        color: #fff;
+        font-size: 1rem;
+        margin-right: 0.5rem;
     }
 
     .mobilenav {
@@ -10,40 +21,41 @@
         justify-content: space-between;
         align-items: center;
         position: fixed;
-        top: 10px;
+        top: .8rem;
         z-index: 9999;
-        background: rgba(7, 29, 61, 0.80);
-        border-radius: 25px;
-        width: 80vw;
-        padding: 20px;
+        background: rgba(7, 29, 61, 0.85);
+        border-radius: 1rem;
+        width: 80%;
+        padding: 1rem 2rem;
         margin: auto;
     }
 
     .mobilenav img {
         display: block;
-        height: 30px;
+        height: 2.5rem;
     }
 
     .mobilenav button {
         background: transparent;
         display: none;
         color: #fff;
-        font-size: 30px;
+        font-size: 2rem;
         border: 0;
         outline: 0;
     }
 
     #nav {
         display: none;
-        width: 80vw;
-        padding: 10px 20px;
         margin: auto;
+        background: rgba(7, 29, 61, 0.95);
         transform: translateY(80px);
+        position: fixed;
+        top: .5rem;
     }
 
     nav {
-        width: 80vw;
-        padding: 10px 20px;
+        width: 80%;
+        padding: 1rem;
         margin: auto;
     }
 
@@ -55,7 +67,7 @@
     nav ul {
         flex-direction: column;
         align-items: flex-start;
-        
+        padding: 0;
     }
 
     .hamburger-menu {
@@ -63,28 +75,28 @@
     }
 
     .intro_page {
-        max-width: 80%;
+        max-width: 100%;
         padding-top: 30%;
     }
 
     .intro_page h1 {
-        font-size: 55px;
         margin: 5px 0;
     }
 
+    .intro_page p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
     .intro_btn {
-        width: 100%;
-        font-size: 16px;
-        margin-top: 25px;
+        margin-top: 2rem;
     }
 
     .printings {
         max-width: 90%;
-        margin: auto;
         flex-direction: column-reverse;
-        margin-bottom: 80px;
+        margin: 80px auto;
     }
-
 
     .print_text {
         padding: 30px 20px;
@@ -93,8 +105,7 @@
     .editings {
         flex-direction: column-reverse;
         max-width: 90%;
-        margin: auto;
-        margin-bottom: 80px;
+        margin: 80px auto;
     }
 
     .edit_text {
@@ -102,23 +113,22 @@
     }
 
     .btn {
-        width: 100%;
-        margin-top: 80px;
+        margin-top: 4rem;
     }
 
     .album_sample {
-        margin-bottom: 80px;
+        margin: 80px auto;
     }
 
     .album_sample img {
         width: 90vw;
         height: auto;
-        margin-top: 40px;
+        margin-top: 2rem;
     }
 
     .album_sample p {
         font-size: 18px;
-        margin: 10px 0;
+        margin: 1rem 0;
     }
 
     .packages h4 {
@@ -137,8 +147,7 @@
 
     
     .contact {
-        margin: 0 6%;
-        margin-bottom: 80px;
+        margin: 80px 6%;
     }
 
     .contact h4 {
@@ -180,35 +189,18 @@
         padding: 1.8px 0;
     }
 
-    .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form textarea {
-        background: #000;
-        padding: 17px;
-        margin-bottom: 14px;
-        box-sizing: border-box;
-        font-size: 18px;
-        color: #fff;
-    }
-
-    .contact-form input[type="submit"] {
-        width: 100%;
-        padding: 10px 16px;
-        font-size: 24px;
-        margin: 28px 0;
-    }
-
     footer img {
         height: 40px;
-        margin: 20px 8%;
+        margin: 20px 6%;
     }
 
     footer p {
         font-size: 18px;
-        margin: 30px 8%;
+        margin: 30px 6%;
     }
 
     .footer-row {
+        margin: 20px 6%;
         flex-direction: column;
         padding-bottom: 0;
     }
@@ -233,7 +225,7 @@
         height: 20px;
     }
 }
-
+/* 
 @media screen and (max-width: 560px) {
     .background_img {
         padding: 0 6%;
@@ -584,4 +576,4 @@
     .footer-row {
         margin: 20px 2%;
     }
-}
+} */

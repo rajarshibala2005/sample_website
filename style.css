@@ -3,20 +3,46 @@
     padding: 0;
     font-family: "Mulish", sans-serif;
     font-style: normal;
+    border: border-box;
 }
 
 body {
-    background: rgb(13, 17, 23);
+    background: rgb(0, 0, 0);;
+}
+
+.iconF {
+    color: #fff;
+    font-size: .6rem;
+    margin-right: 0.8rem;
+}
+.icon {
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 0.8rem;
+}
+
+.i {
+    display: none;
+    cursor: pointer;
+}
+
+.cross  {
+    display: none;
+}
+
+.hr-home {
+    width: 100%;
+    height: .1rem;
+    background-color: rgb(20, 20, 20);;
 }
 
 .background_img {
-    max-width: 100%;
-    min-height: 100vh;
-    padding: 0 8%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(23, 1, 94, 0.65)), url(images/background_img.jpg);
+    max-width: 100vw;
+    min-height: 50rem;
+    padding: 0 14%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(images/background_img.jpg);
     background-position: center;
     background-size: cover;
-    margin-bottom: 100px;
 }
 
 .mobilenav {
@@ -24,19 +50,17 @@ body {
 }
 
 nav {
-    width: 100rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 10px;
-    z-index: 9999;
-    background: rgba(7, 29, 61, 0.80);
+    /* background: rgba(7, 29, 61, 0.80); */
+    background: transparent;
     border-radius: 25px;
 }
 
 nav img {
-    height: 40px;
+    height: 3rem;
 }
 
 nav ul {
@@ -47,7 +71,9 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    margin: 0 20px;
+    margin: .3rem 1rem;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li a {
@@ -76,12 +102,12 @@ nav ul li a {
 
 .intro_page {
     max-width: 60%;
-    padding-top: 300px;
+    padding-top: 10rem;
 }
 
 .intro_page h1 {
     text-decoration: none;
-    font-size: 70px;
+    font-size: 50px;
     color: #fff;
     margin: 10px 0;
 }
@@ -103,7 +129,7 @@ nav ul li a {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 /* Styles for the click effect */
@@ -133,7 +159,7 @@ nav ul li a {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin: 100px auto;
 }
 
 .print_text {
@@ -145,13 +171,15 @@ nav ul li a {
     color: rgb(250, 250, 250);
     margin-bottom: 30px;
     font-size: 40px;
-    font-weight: 400;
 }
 
 .print_text p {
+    display: flex;
+    align-items: center;
+}
+.print_text p {
     color: rgb(205, 205, 205);
     font-size: 20px;
-    font-weight: 100;
     margin: 8px 0;
 }
 
@@ -171,7 +199,7 @@ nav ul li a {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin: 100px auto;
     flex-direction: row-reverse;
 }
 
@@ -184,14 +212,11 @@ nav ul li a {
     color: rgb(250, 250, 250);
     margin-bottom: 30px;
     font-size: 40px;
-    font-weight: 400;
 }
 
 .edit_text p {
     color: rgb(205, 205, 205);
     font-size: 15px;
-    font-weight: 100;
-    margin: 10px 0;
     line-height: 30px;
 }
 
@@ -207,21 +232,21 @@ nav ul li a {
 
 .btn {
     display: inline-block;
-    padding: 10px 36px;
-    background-color: #ffffff;
-    color: #000;
+    padding: .8rem 2rem;
+    background-color: #0055ff;
+    color: #fff;
     border: none;
-    border-radius: 50px;
-    font-size: 20px;
+    border-radius: .8rem;
+    font-size: 1.5rem;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     margin-top: 40px;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/* Effect on click */
 .btn:hover {
-    background: #cdcdcd;
+    background-color: #0549d2;
 }
 
 .album_sample {
@@ -230,7 +255,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin: 150px 0;
 }
 
 .album_sample img {
@@ -251,7 +276,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin: 150px 0;
 }
 
 .packages h4 {
@@ -277,8 +302,7 @@ nav ul li a {
 }
 
 .contact {
-    margin: 0 8%;
-    margin-bottom: 100px;
+    margin: 150px 16%;
 }
 
 .contact h4 {
@@ -288,7 +312,7 @@ nav ul li a {
     text-align: center;
     font-style: oblique;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 5rem;
 }
 
 .contact iframe {
@@ -298,16 +322,9 @@ nav ul li a {
 
 .contact-row {
     min-width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    border: #fff solid 1px;
 }
 
 .contact-col {
-    flex-basis: 50%;
-    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -333,77 +350,24 @@ nav ul li a {
     color: #fff;
 }
 
-.contact-form {
-    width: 100%;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.border-r {
-    border-right: #fff solid 1px;
-    
-}
-
-/* Style for form inputs */
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    background: black;
-    width: 100%;
-    padding: 18px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    color: var(--secondary-color);
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 20px;
-    color: #fff;
-}
-
-/* Style for the submit button */
-.contact-form input[type="submit"] {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 25px;
-    display: block;
-    margin: 30px 0;
-}
-
-/* Style for the submit button on hover */
-.contact-form input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
 footer {
-    background: rgb(1, 28, 70.65);
+    background: rgb(0, 2, 5);
 }
 
 footer img {
     height: 50px;
-    margin: 20px 8%;
+    margin: 20px 16%;
 }
 
-footer hr {
-    color: #fff;
-}
 
 footer p {
     font-size: 18px;
     color: #fff;
-    margin: 30px 8%;
+    margin: 30px 16%;
 }
 
 .footer-row {
-    margin: 20px 8%;
+    margin: 20px 16%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -414,6 +378,14 @@ footer p {
     max-width: 20%;
     display: flex;
     flex-direction: column;
+}
+
+.footer-col a {
+    display: flex;
+}
+.footer-col p {
+    display: flex;
+    align-items: center;
 }
 
 .footer-col h4 {

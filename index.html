@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Khula:wght@300;400;600;700;800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="images/navlogo2.jpg" type="image/jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsivr.css">
 </head>
@@ -19,21 +20,17 @@
         <div class="background_img">
             <nav class="mobilenav" id="mobilenav">
                 <img src="images/RRSD.png" alt="logo">
-                <div class="hamburger-menu" id="open-menu">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                <button id="close">x</button>
+                <i class="i fa-solid fa-bars" id="open-menu"></i>
+                <i class="cross fa-regular fa-circle-xmark" id="cross" ></i>
             </nav>
             <nav id="nav">
                 <img src="images/RRSD.png" alt="logo">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#offer">Offer</a></li>
+                    <li><i class="i fa-solid fa-house"></i><a href="#home">Home</a></li>
+                    <li><i class="i fa-solid fa-user"></i><a href="#contact">Contact</a></li>
+                    <li><i class="i fa-solid fa-image"></i><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#offer">Offers</a></li>
                     <li><a href="#services">Facialities</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
@@ -45,23 +42,23 @@
                     spirit.</p>
                 <a href="gallery.html" target="_blank"><button class="intro_btn">Go to Gallery</button></a>
             </div>
-        </div>
+        </div><hr class="hr-home">
     </header>
     <main>
         <section class="printings">
             <div class="print_text">
                 <h4>Printings</h4>
-                <p>Post Cards</p>
-                <p>Thank you Cards</p>
-                <p>Visiting Cards</p>
-                <p>Stamp and Passport size photo</p>
-                <p>Custom size photo</p>
+                <p><i class="iconF fa-solid fa-circle"></i>Post Cards</p>
+                <p><i class="iconF fa-solid fa-circle"></i>Thank you Cards</p>
+                <p><i class="iconF fa-solid fa-circle"></i>Visiting Cards</p>
+                <p><i class="iconF fa-solid fa-circle"></i>Stamp and Passport size photo</p>
+                <p><i class="iconF fa-solid fa-circle"></i>Custom size photo</p>
                 <button class="btn">Rate Chart</button>
             </div>
             <div class="print_img">
                 <img src="images/sd 1 copy.png" alt="image">
             </div>
-        </section>
+        </section><hr class="hr-home">
         <section class="editings">
             <div class="edit_text">
                 <h4>Editings</h4>
@@ -81,7 +78,7 @@
             <h4>Packages</h4>
             <p>Price may differ according to customer choice</p>
             <img src="images/offer.jpeg" alt="images">
-        </section>
+        </section><hr class="hr-home">
         <section id="contact" class="contact">
             <h4>Contact</h4>
             <iframe id="contact-form"
@@ -113,33 +110,12 @@
                         </span>
                     </div>
                 </div>
-                <div class="contact-col border-r">
-                    <div class="contact-form">
-                        <form name='submit-to-google-sheet' method="POST">
-                            <label for="name"></label>
-                            <input type="text" id="name" name="Name" placeholder="Name" required>
-
-                            <label for="email"></label>
-                            <input type="email" id="email" name="Email" placeholder="Email" required>
-
-                            <label for="Phone No."></label>
-                            <input type="text" id="Phone No." name="Phone No." placeholder="Phone no." required>
-
-                            <label for="message"></label>
-                            <textarea id="message" name="Message" placeholder="Describe your query" rows="5"
-                                required></textarea>
-
-                            <input type="submit" value="Submit" name="submit">
-                        </form>
-                        <div id="vic"></div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
     <footer>
         <img src="images/RRSD.png" alt="logo">
-        <hr>
+        <hr class="hr-home">
         <div class="footer-row">
             <div class="footer-col">
                 <h4>About us</h4>
@@ -154,27 +130,17 @@
             </div>
             <div class="footer-col">
                 <h4>Quick contact</h4>
-                <div>
-                    <img src="images/telephone.png" alt="logo">
-                    <p>91 98756 26282</p>
-                </div>
-                <div>
-                    <img src="images/mail.png" alt="logo">
-                    <p>rabindrabala@gnail.com</p>
-                </div>
-                <div>
-                    <img src="images/location.png" alt="logo">
-                    <p>Baguihati, Kolkata</p>
-                </div>
+                    <p><i class="icon fa-solid fa-phone"></i>91 98756 26282</p>
+                    <p><i class="icon fa-solid fa-envelope"></i>rabindrabala@gnail.com</p>
+                    <p><i class="icon fa-solid fa-location-dot"></i>Baguihati, Kolkata</p>
             </div>
             <div class="footer-col">
                 <h4>Follow us on</h4>
-                <p>Youtube</p>
-                <p>Facebook</p>
-                <p>Twiter</p>
+                <p><i class="icon fa-brands fa-facebook"></i>Youtube</p>
+                <p><i class="icon fa-brands fa-youtube"></i>Youtube</p>
+                <p><i class="icon fa-brands fa-twitter"></i>Twiter</p>
             </div>
         </div>
-        <hr>
         <p>&copy 2023 Rathi-Raj STUDIO all rights reserved.</p>
     </footer>
     <script data-="" src="script.js"></script>
